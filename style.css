@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Big Shoulders Display', cursive;
+font-family: 'Fraunces', serif;
+font-family: 'Lexend Deca', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Outfit', sans-serif;
+background-color: hsl(0, 0%, 95%);
+}
+.contanier{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    
+}
+
+.contanier .column1{
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+    
+    
+}
+.contanier .image{
+    margin: 20px;
+
+}
+.contanier .firstP{
+    font-weight: bold;
+     margin:20px  ;
+     font-size: x-large;
+     color: white;
+}
+.contanier .secondP{
+    margin: 20px;
+    font-size: 14px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.contanier .column1 span{
+    
+    color:  hsl(31, 77%, 52%);
+}
+ .contanier span{
+    display: block;
+    padding: 10px 20px;
+    width: fit-content;
+    text-align: center;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 35px;
+    background-color: white;
+    
+    
+}
+.contanier .column2{
+    background-color: hsl(184, 100%, 22%);
+    
+}
+.contanier .column2 span{
+    color: hsl(184, 100%, 22%);;
+}
+.contanier .column3{
+    background-color: hsl(179, 100%, 13%);
+}
+.contanier .column3 span{
+    color: hsl(179, 100%, 13%);
+}
+@media(max-width:414px)
+{
+.contanier {
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 120px;
+}
+}
